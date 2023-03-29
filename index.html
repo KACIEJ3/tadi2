@@ -1,0 +1,54 @@
+<!DOCTYPE html>  
+<html lang="pl">  
+<head>
+    <meta charset="UTF-8">
+
+    <title>malarz</title>
+    <link rel="Stylesheet" href="styl_1.css">   
+</head>
+<body>
+    <script> 
+        function funkcja(){ 
+        
+            let dane=document.getElementById("wprowadz").value; 
+            let dzielenie=dane/4; 
+            dzielenie=Math.ceil(dzielenie); 
+
+            document.getElementById("wynik").innerHTML="Liczba potrzebnych puszek: "+dzielenie; 
+
+    }
+    </script>
+    
+    <div class="baner"> 
+        <h1>Malowanie pokoi i biur</h1>
+    </div>
+
+    <div class="lewy"> 
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="mieszamy.html">Mieszamy</a></li>
+            <li><a href="index.html">Wyceniamy</a></li>
+        </ul>
+
+    </div>
+
+    <div class="srodkowy"> 
+        <h2>Zapotrzebowanie na farbę</h2>
+        Powierzchnia malowania (m<sup>2</sup>)<input type="number" id="wprowadz"> 
+        <input type="button" value="Policz" onclick="funkcja()">
+        <p id="wynik"></p> 
+        
+
+    </div>
+
+    <div class="prawy"> 
+        <img src="obraz.png" alt="Próbki farb">
+    </div>
+
+    <div class="stopka"> 
+        <h3>MALARZ</h3>
+        <p>Stronę opracował: Maciej Kichler</p>
+    </div>
+
+</body>
+</html>
